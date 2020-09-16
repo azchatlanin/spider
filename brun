@@ -31,7 +31,7 @@ divider.run() {
   hl.subtle "Run project"
 
   run.set-next show-output-on
-  run "bazel run main:${PROJECT_NAME}"
+  run "bazel run main:${PROJECT_NAME} -- -p /media/chatlanin/Projects/C++/Spider/files_test"
 }
 
 main() {

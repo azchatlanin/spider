@@ -4,7 +4,8 @@ cc_binary(
   name = "spider",
   srcs = ["main.cpp"],
   deps = [
-    "//src/packages:packages",
-    "@spdlog//:headers",
+    "//src/analyzer:analyzer",
+    "@com_github_gflags_gflags//:gflags",
+    "@glog",
   ]
 )
